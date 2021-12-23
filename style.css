@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-bg-color : #0d0d0d;
+    --secondary-bg-color : #f2f2f2;
+    --text-color : #1ba0f2;
+    --text-shadow-color : #24383b;
+    --verylarge-text-size : 3.5rem;
+    --large-text-size : 1.5rem;
+    --normal-text-size : 1rem;
+    --small-text-size : 0.8rem;
+    --font-weight : 500;
+    --text-style : 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--primary-bg-color);
+    height: 90vh;
+    font-family: var(--text-style);
+    
+}
+.header{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    column-gap: 0.6rem;
+}
+.icon{
+    color:var(--text-color);
+    padding-left: 16px;
+}
+.header h3{
+    font-size: var(--large-text-size);
+    color: var(--text-color);
+    padding: 10px 0 10px ;
+    text-shadow: 2px 2px var(--text-shadow-color);
+}
+.get-location{
+    display: inline-flex;
+    position: absolute;
+    right: 2rem;
+    column-gap: 1rem;
+    
+}
+.get-location input{
+    font-family: var(--text-style);
+    width: 15rem;
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--secondary-bg-color);
+    color: var(--secondary-bg-color);
+    border-radius: 2px;
+    font-size:var(--small-text-size);
+}
+/*.get-location input:focus{
+    background-color: #3f3c3cab;
+}*/
+.get-location button{
+    font-family: var(--text-style);
+    width: 5.5rem;
+    height: 27px;
+    border-radius: 14px;
+    background-color: var(--text-color);
+    color: var(--primary-bg-color);
+    border: none;
+    font-weight: var(--font-weight);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.get-location button:hover{
+    transform: translateX(2px);
+    box-shadow: 0 1px 1px rgba(249, 254, 255, 1);
+}
+.weather-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 20%;
+    height: 70%;
+    background-color: var(--secondary-bg-color);
+    position: absolute;
+    border-radius: 18px;
+    text-align: center;
+}
+.weather-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+}
+.location{
+    width: 100%;
+    height: 20%;
+    padding-top: 20px;
+    font-size: var(--large-text-size);
+}
+.temp{
+    padding-top: 20px;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height : 40%;
+    font-size: var(--verylarge-text-size);
+}
+.location{
+    padding-top: 20px;
+    width: 100%;
+    height: 2rem;
+    font-size: var(--normal-text-size);
+}

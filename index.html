@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="/weather-app/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <i class="ri-cloud-line icon"></i>
+            <h3><span>Weather</span></h3>
+            <div class="get-location">
+                <input type="text" placeholder="Enter a City..." class="city" id="city"/>
+                <button class="btn">Search</button>
+            </div>
+        </div>
+        <section class="weather-section">
+            <div class="container">
+                <div class="weather-container">
+                    <div class="location"></div>
+                    <div class="temp">0°C</div>
+                    <div class="summary"></div>
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </section>
+        <script src="/weather-app/script.js"></script>
+    </body>
+</html>
