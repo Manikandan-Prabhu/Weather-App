@@ -38,7 +38,7 @@ document.querySelector(".btn").addEventListener('click', () =>{
         console.log("outside if " + city);
         const api = "c66bf5c7f2c43bcd941ae103dc138c45";
         //const base = `http://api.openweathermap.org/data/2.5/weather?lat=lat&lon=long&appid=c66bf5c7f2c43bcd941ae103dc138c45`;
-        const base = `http://api.openweathermap.org/data/2.5/weather?q=`+city+`&appid=c66bf5c7f2c43bcd941ae103dc138c45`;
+        const base = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c66bf5c7f2c43bcd941ae103dc138c45`;
         fetch(base)
         .then((response) => {
           return response.json();
